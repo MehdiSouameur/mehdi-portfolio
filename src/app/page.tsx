@@ -56,7 +56,7 @@ export default function Home() {
       <main className="lex-grow flex flex-col items-center pt-10 text-white mt-20 w-full max-w-screen overflow-x-hidden px-4 overflow-x-hidden">
 
         {/* Hero Section */}
-        <h1 className="text-white text-4xl font-bold text-center animate-fadeIn">Hi II&apos;m m <span className="text-[#20E9FF]">Mehdi</span> <br></br>
+        <h1 className="text-white text-4xl font-bold text-center animate-fadeIn">Hi I&apos;m <span className="text-[#20E9FF]">Mehdi</span> <br></br>
         Welcome to my developer portfolio</h1>
         <div className="w-[80%] md:w-[50%]">
           <p className="text-white text-center animate-fadeIn pt-2">Former Systems Engineer, enthusiastic backend engineer and part time web designer.</p>
