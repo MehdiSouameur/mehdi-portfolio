@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* styles/custom.css */
+
+@layer utilities {
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fadeIn {
+    animation: fade-in 1s ease-out forwards;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Afacad', sans-serif;
+  font-weight: 700;
+  background-color: #000415;
+}
+
+p {
+  font-family: 'Afacad', sans-serif;
+  font-weight: 300;
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* shrink base font size */
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  nav a {
+    font-size: 16px; /* prevent nav links from overflowing */
+    padding: 0.5rem 0; /* add breathing room if stacked */
+  }
+}
