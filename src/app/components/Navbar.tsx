@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,21 +21,21 @@ export default function Navbar() {
             isOpen ? "flex" : "hidden md:flex"
           }`}
         >
-          <a href="/" className="hover:text-[#20E9FF] transition-colors duration-300">
+          <Link href="/" className="hover:text-[#20E9FF] transition-colors duration-300">
             Home
-          </a>
-          <a href="#projects" className="hover:text-[#20E9FF] transition-colors duration-300">
+          </Link>
+          <Link href="#projects" className="hover:text-[#20E9FF] transition-colors duration-300">
             Projects
-          </a>
-          <a href="#experience" className="hover:text-[#20E9FF] transition-colors duration-300">
+          </Link>
+          <Link href="#experience" className="hover:text-[#20E9FF] transition-colors duration-300">
             Experience
-          </a>
-          <a href="#about" className="hover:text-[#20E9FF] transition-colors duration-300">
+          </Link>
+          <Link href="#about" className="hover:text-[#20E9FF] transition-colors duration-300">
             About
-          </a>
-          <a href="#contact" className="hover:text-[#20E9FF] transition-colors duration-300">
+          </Link>
+          <Link href="#contact" className="hover:text-[#20E9FF] transition-colors duration-300">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

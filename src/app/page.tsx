@@ -7,6 +7,7 @@ import SkillBadge from "./components/SkillBadge";
 import SkillBadgeLarge from "./components/SkillBadgeLarge";
 import AnimatedSection from "./components/AnimatedSection";
 import Navbar from "./components/Navbar";
+import Link from "next/link";
 
 
 const container = {
@@ -55,7 +56,7 @@ export default function Home() {
       <main className="lex-grow flex flex-col items-center pt-10 text-white mt-20 w-full max-w-screen overflow-x-hidden px-4 overflow-x-hidden">
 
         {/* Hero Section */}
-        <h1 className="text-white text-4xl font-bold text-center animate-fadeIn">Hi I'm <span className="text-[#20E9FF]">Mehdi</span> <br></br>
+        <h1 className="text-white text-4xl font-bold text-center animate-fadeIn">Hi II&apos;m m <span className="text-[#20E9FF]">Mehdi</span> <br></br>
         Welcome to my developer portfolio</h1>
         <div className="w-[80%] md:w-[50%]">
           <p className="text-white text-center animate-fadeIn pt-2">Former Systems Engineer, enthusiastic backend engineer and part time web designer.</p>
@@ -162,7 +163,7 @@ export default function Home() {
           <div className="py-3 mt-10">
             <AnimatedSection>
               <p>
-                I'm Mehdi, a <span className="text-[#20E9FF]">Computer Science graduate</span> from the University of Reading
+                I&apos;m Mehdi, a <span className="text-[#20E9FF]">Computer Science graduate</span> from the University of Reading
                 with <span className="text-[#20E9FF]">2 years of experience as a Systems Engineer.</span> With a strong
                 foundation in Software Development and a passion for solving
                 problems, I love creating impactful and robust software that make a
@@ -290,18 +291,18 @@ export default function Home() {
 
           <div className="flex flex-col w-[50%] pl-10 md:pl-30">
             <h1 className="text-xl md:text-3xl !font-light">Quick Links</h1>
-            <a href="#projects" className="text-gray-200 underline font-light">
+            <Link href="#projects" className="text-gray-200 underline font-light">
               Projects
-            </a>
-            <a href="#experience" className="text-gray-200 underline font-light">
+            </Link>
+            <Link href="#experience" className="text-gray-200 underline font-light">
               Experience
-            </a>
-            <a href="#about" className="text-gray-200 underline font-light">
+            </Link>
+            <Link href="#about" className="text-gray-200 underline font-light">
               About me
-            </a>
-            <a href="#contact" className="text-gray-200 underline font-light">
+            </Link>
+            <Link href="#contact" className="text-gray-200 underline font-light">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </footer>
