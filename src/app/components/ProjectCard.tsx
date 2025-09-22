@@ -10,6 +10,18 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ title, description, imageUrl, link, skills = [] }: ProjectCardProps) {
+  let linkElement = null;
+  if (link) {
+    linkElement = (<a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-4 px-3 py-1 border border-white text-white rounded transition-colors duration-300 hover:bg-white hover:text-black"
+    >
+      View Project
+  </a>)
+  }
+
   return (
     <div className="bg-[#111326] rounded-xl shadow-lg overflow-hidden w-80 p-5 x-2 border-gray-700 m-2">
       <div className="flex justify-center">
@@ -26,14 +38,7 @@ export default function ProjectCard({ title, description, imageUrl, link, skills
         ))}
       </div>
 
-      <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 px-3 py-1 border border-white text-white rounded transition-colors duration-300 hover:bg-white hover:text-black"
-        >
-          View Project
-      </a>
+      {linkElement}
     </div>
   );
 }

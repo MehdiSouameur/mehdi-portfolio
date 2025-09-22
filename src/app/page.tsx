@@ -53,7 +53,7 @@ export default function Home() {
       </Navbar>
 
       {/* Main Section */}
-      <main className="lex-grow flex flex-col items-center pt-10 text-white mt-20 w-full max-w-screen overflow-x-hidden px-4 overflow-x-hidden">
+      <main className="lex-grow flex flex-col items-center pt-10 text-white mt-20 w-full max-w-screen px-4">
 
         {/* Hero Section */}
         <h1 className="text-white text-4xl font-bold text-center animate-fadeIn">Hi I&apos;m <span className="text-[#20E9FF]">Mehdi</span> <br></br>
@@ -89,7 +89,7 @@ export default function Home() {
               title="Sharkpedia"
               description="A small shark encyclopedia website with the ability to create new articles with a custom content management system built using express.js and ejs"
               imageUrl="/sharkpedia.png"
-              link="https://www.youtube.com/"
+              link="https://sharkpedia.onrender.com/"
               skills={["Express.js", "Ejs", "Firebase"]}
             />
 
